@@ -15,6 +15,8 @@
 
 - (void)dealloc
 {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"TestNotification" object:nil];
+    
 	[super dealloc];
     
     [self.settings release];
@@ -22,6 +24,13 @@
 
 - (IBAction) startPress
 { 
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receiveTestNotification:) 
+                                                 name:@"TestNotification"
+                                               object:nil];
+    
+    
+    
         self.settings = [[SettingsView alloc] initWithNibName:@"SettingsView" bundle:nil];
     
         //self.settings.modalPresentationStyle = UIModalPresentationFullScreen;
@@ -33,6 +42,16 @@
         [self.window makeKeyAndVisible];
     
 
+}
+
+- (void) receiveTestNotification:(NSNotification *) notification
+{
+    // [notification name] should always be @"TestNotification"
+    // unless you use this method for observation of other notifications
+    // as well.
+    
+    //if ([[notification name] isEqualToString:@"TestNotification"])
+        NSLog (@"Successfully received the test notification! %@", notification);
 }
 
 @end

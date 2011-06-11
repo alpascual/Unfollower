@@ -79,7 +79,24 @@
         
         NSLog(@"Change preference for users replied %@", get );
         
+        // Token 
+        if ( [myPrefs stringForKey:@"token"] != nil )
+        {
+            NSString *token = [myPrefs stringForKey:@"token"];
+             NSString *myRequestString = [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/tweeps/AddToken?sUserName=%@&sToken=%@", myUsername, token];
+            
+            // Your code goes here: get the token and do something
+            NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:myRequestString]];
+            
+            NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+            NSString *get = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
+            
+            NSLog(@"Send token %@", get );
+        }
+        
     }
+    
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated {

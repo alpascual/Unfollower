@@ -15,9 +15,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    UIRemoteNotificationType enabledTypes = UIRemoteNotificationTypeSound | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert;
+    
+    [application registerForRemoteNotificationTypes:enabledTypes];
+    
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)application:(UIApplication *) application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)token
+
+{    
+    
+    NSUserDefaults *myPrefs = [NSUserDefaults standardUserDefaults];
+    
+    [myPrefs setObject:token forKey:@"token"];   
+    
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

@@ -77,4 +77,21 @@
     [self dismissModalViewControllerAnimated:YES];
 }
 
+- (IBAction) resetData {
+    
+    NSUserDefaults *myPrefs = [NSUserDefaults standardUserDefaults];
+    
+    if ( [myPrefs stringForKey:@"username"] != nil )
+    {
+        NSString *myUsername = [myPrefs stringForKey:@"username"];
+    
+        NSString *myRequestString = [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/tweeps/delete?sUsername=%@", myUsername];
+    
+        NSURL *urlToOpen = [[NSURL alloc] initWithString:myRequestString];
+    
+        NSURLRequest *aReq = [NSURLRequest requestWithURL:urlToOpen];
+        [self.web loadRequest:aReq];
+    }
+}
+
 @end

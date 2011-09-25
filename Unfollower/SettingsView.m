@@ -122,8 +122,11 @@
         if ( self.segment.selectedSegmentIndex == 0 )
              [myPrefs setObject:[[NSString alloc] initWithFormat:@"%@", @"reply" ] forKey:@"tweet"];
             
-        else
+        else if ( self.segment.selectedSegmentIndex == 1 )
             [myPrefs setObject:[[NSString alloc] initWithFormat:@"%@", @"dm" ] forKey:@"tweet"];
+        
+        else 
+            [myPrefs setObject:[[NSString alloc] initWithFormat:@"%@", @"none" ] forKey:@"tweet"];
         
         
         /*if ( [myPrefs stringForKey:@"username"] == nil )

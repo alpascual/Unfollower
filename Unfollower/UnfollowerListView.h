@@ -34,5 +34,6 @@
 
 - (void) rebuildDataWithRequest;
 - (void) showUser:(NSIndexPath *)indexPath;
+- (void) chechallProcess;
 
 @end

@@ -67,9 +67,13 @@
         {
             preference = [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/tweeps/Edit?sUserName=%@&bAlert=true&bDM=false", myUsername];
         }
-        else
+        else if ( [tweetPref isEqualToString:@"dm"] )
         {
             preference = [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/tweeps/Edit?sUserName=%@&bAlert=false&bDM=true", myUsername];
+        }
+        else
+        {
+            preference = [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/tweeps/Edit?sUserName=%@&bAlert=false&bDM=false", myUsername];
         }
         
         // Add the preference       
@@ -144,9 +148,29 @@
 	
 }
 
+/// Check and process the alerts and also will send the tweet if needed to
+- (void) chechallProcess
+{
+    NSUserDefaults *myPrefs = [NSUserDefaults standardUserDefaults];
+    
+    if ( [myPrefs stringForKey:@"username"] != nil )
+    {
+        NSString *myUsername = [myPrefs stringForKey:@"username"];
+        NSString *myRequestString = [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/tweeps/ProcessOne?sUsername=%@", myUsername];
+        
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:myRequestString]];
+        NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+        NSString *get = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
+        
+        NSLog(@"Response %@", get );
+    }
+}
+
 - (void) rebuildDataWithRequest
 {
     self.alertMessage.text = @"Connecting...";
+    
+    [self chechallProcess];
     
     NSUserDefaults *myPrefs = [NSUserDefaults standardUserDefaults];
     
@@ -191,7 +215,7 @@
         [self.table reloadData]; 
         NSLog(@"Finished loading the table");
         
-        self.alertMessage.text = @"Lucky if the table is empty ;-)";
+        self.alertMessage.text = @"Empty table = nobody unfollowed you ;-)";
         
     }
 }

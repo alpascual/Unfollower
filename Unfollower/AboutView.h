@@ -19,5 +19,6 @@
 @property (nonatomic,retain) IBOutlet UIButton *closeButton;
 
 - (IBAction) closeModal;
+- (IBAction) resetData;
 
 @end

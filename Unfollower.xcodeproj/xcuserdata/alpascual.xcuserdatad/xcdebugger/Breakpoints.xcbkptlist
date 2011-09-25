@@ -23,54 +23,12 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Unfollower/UnfollowerListView.m"
-         timestampString = "327898600.902768"
+         timestampString = "338670049.168381"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "48"
-         endingLineNumber = "48"
-         landmarkName = "-mydelay"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "Unfollower/UnfollowerListView.m"
-         timestampString = "329455216.621242"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "85"
-         endingLineNumber = "85"
-         landmarkName = "-mydelay"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "Unfollower/UnfollowerAppDelegate.m"
-         timestampString = "329455229.301823"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "32"
-         endingLineNumber = "32"
-         landmarkName = "-application:didRegisterForRemoteNotificationsWithDeviceToken:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "Unfollower/UnfollowerAppDelegate.m"
-         timestampString = "329455266.135826"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "19"
-         endingLineNumber = "19"
-         landmarkName = "-application:didFinishLaunchingWithOptions:"
+         startingLineNumber = "154"
+         endingLineNumber = "154"
+         landmarkName = "-chechallProcess"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

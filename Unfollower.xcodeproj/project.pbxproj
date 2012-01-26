@@ -106,6 +106,20 @@
 		7691EA1D13788F8900578213 /* AboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7691EA1B13788F8900578213 /* AboutView.m */; };
 		7691EA1E13788F8900578213 /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7691EA1C13788F8900578213 /* AboutView.xib */; };
 		76C0C85E137ABBF20090C285 /* iPadUnfollowerListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C0C85C137ABBF20090C285 /* iPadUnfollowerListView.xib */; };
+		76C43EFC14CCF3D00009F29A /* autum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EED14CCF3D00009F29A /* autum.jpg */; };
+		76C43EFD14CCF3D00009F29A /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EEE14CCF3D00009F29A /* backbutton.png */; };
+		76C43EFE14CCF3D00009F29A /* desert.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EEF14CCF3D00009F29A /* desert.jpg */; };
+		76C43EFF14CCF3D00009F29A /* GradientFill.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EF114CCF3D00009F29A /* GradientFill.png */; };
+		76C43F0014CCF3D00009F29A /* MovieTransportBackground-ChapterButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EF214CCF3D00009F29A /* MovieTransportBackground-ChapterButton.png */; };
+		76C43F0114CCF3D00009F29A /* MovieTransportBackground-Chapters.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EF314CCF3D00009F29A /* MovieTransportBackground-Chapters.png */; };
+		76C43F0214CCF3D00009F29A /* MovieTransportBackground-long.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EF414CCF3D00009F29A /* MovieTransportBackground-long.png */; };
+		76C43F0314CCF3D00009F29A /* MovieTransportBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EF514CCF3D00009F29A /* MovieTransportBackground.png */; };
+		76C43F0414CCF3D00009F29A /* UIAlertSheetDefaultBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EF614CCF3D00009F29A /* UIAlertSheetDefaultBackground.png */; };
+		76C43F0514CCF3D00009F29A /* UILCDBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EF714CCF3D00009F29A /* UILCDBackground.png */; };
+		76C43F0614CCF3D00009F29A /* UIPopupAlertSheetBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EF814CCF3D00009F29A /* UIPopupAlertSheetBackground.png */; };
+		76C43F0714CCF3D00009F29A /* UITableSelection.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EF914CCF3D00009F29A /* UITableSelection.png */; };
+		76C43F0814CCF3D00009F29A /* lake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EFA14CCF3D00009F29A /* lake.jpg */; };
+		76C43F0914CCF3D00009F29A /* raindrops.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EFB14CCF3D00009F29A /* raindrops.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -283,6 +297,20 @@
 		7691EA1B13788F8900578213 /* AboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutView.m; sourceTree = "<group>"; };
 		7691EA1C13788F8900578213 /* AboutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutView.xib; sourceTree = "<group>"; };
 		76C0C85C137ABBF20090C285 /* iPadUnfollowerListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPadUnfollowerListView.xib; sourceTree = "<group>"; };
+		76C43EED14CCF3D00009F29A /* autum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = autum.jpg; sourceTree = "<group>"; };
+		76C43EEE14CCF3D00009F29A /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = "<group>"; };
+		76C43EEF14CCF3D00009F29A /* desert.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = desert.jpg; sourceTree = "<group>"; };
+		76C43EF114CCF3D00009F29A /* GradientFill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GradientFill.png; sourceTree = "<group>"; };
+		76C43EF214CCF3D00009F29A /* MovieTransportBackground-ChapterButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MovieTransportBackground-ChapterButton.png"; sourceTree = "<group>"; };
+		76C43EF314CCF3D00009F29A /* MovieTransportBackground-Chapters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MovieTransportBackground-Chapters.png"; sourceTree = "<group>"; };
+		76C43EF414CCF3D00009F29A /* MovieTransportBackground-long.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MovieTransportBackground-long.png"; sourceTree = "<group>"; };
+		76C43EF514CCF3D00009F29A /* MovieTransportBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MovieTransportBackground.png; sourceTree = "<group>"; };
+		76C43EF614CCF3D00009F29A /* UIAlertSheetDefaultBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIAlertSheetDefaultBackground.png; sourceTree = "<group>"; };
+		76C43EF714CCF3D00009F29A /* UILCDBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UILCDBackground.png; sourceTree = "<group>"; };
+		76C43EF814CCF3D00009F29A /* UIPopupAlertSheetBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIPopupAlertSheetBackground.png; sourceTree = "<group>"; };
+		76C43EF914CCF3D00009F29A /* UITableSelection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UITableSelection.png; sourceTree = "<group>"; };
+		76C43EFA14CCF3D00009F29A /* lake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lake.jpg; sourceTree = "<group>"; };
+		76C43EFB14CCF3D00009F29A /* raindrops.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = raindrops.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -400,6 +428,7 @@
 		7691E8C413782D8B00578213 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				76C43EEC14CCF3D00009F29A /* NewLook */,
 				768960671381B5E900670E8A /* matrix.jpg */,
 				768960681381B5E900670E8A /* matrix.png */,
 				7691EA1413788E7800578213 /* 01-refresh.png */,
@@ -773,6 +802,35 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		76C43EEC14CCF3D00009F29A /* NewLook */ = {
+			isa = PBXGroup;
+			children = (
+				76C43EED14CCF3D00009F29A /* autum.jpg */,
+				76C43EEE14CCF3D00009F29A /* backbutton.png */,
+				76C43EEF14CCF3D00009F29A /* desert.jpg */,
+				76C43EF014CCF3D00009F29A /* Dialogs */,
+				76C43EFA14CCF3D00009F29A /* lake.jpg */,
+				76C43EFB14CCF3D00009F29A /* raindrops.jpg */,
+			);
+			path = NewLook;
+			sourceTree = "<group>";
+		};
+		76C43EF014CCF3D00009F29A /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				76C43EF114CCF3D00009F29A /* GradientFill.png */,
+				76C43EF214CCF3D00009F29A /* MovieTransportBackground-ChapterButton.png */,
+				76C43EF314CCF3D00009F29A /* MovieTransportBackground-Chapters.png */,
+				76C43EF414CCF3D00009F29A /* MovieTransportBackground-long.png */,
+				76C43EF514CCF3D00009F29A /* MovieTransportBackground.png */,
+				76C43EF614CCF3D00009F29A /* UIAlertSheetDefaultBackground.png */,
+				76C43EF714CCF3D00009F29A /* UILCDBackground.png */,
+				76C43EF814CCF3D00009F29A /* UIPopupAlertSheetBackground.png */,
+				76C43EF914CCF3D00009F29A /* UITableSelection.png */,
+			);
+			path = Dialogs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -799,6 +857,7 @@
 		7691E89213782D1900578213 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = Al;
 			};
 			buildConfigurationList = 7691E89513782D1900578213 /* Build configuration list for PBXProject "Unfollower" */;
@@ -846,6 +905,20 @@
 				7690983F137CB7CD00392018 /* ShowUserView.xib in Resources */,
 				768960691381B5E900670E8A /* matrix.jpg in Resources */,
 				7689606A1381B5E900670E8A /* matrix.png in Resources */,
+				76C43EFC14CCF3D00009F29A /* autum.jpg in Resources */,
+				76C43EFD14CCF3D00009F29A /* backbutton.png in Resources */,
+				76C43EFE14CCF3D00009F29A /* desert.jpg in Resources */,
+				76C43EFF14CCF3D00009F29A /* GradientFill.png in Resources */,
+				76C43F0014CCF3D00009F29A /* MovieTransportBackground-ChapterButton.png in Resources */,
+				76C43F0114CCF3D00009F29A /* MovieTransportBackground-Chapters.png in Resources */,
+				76C43F0214CCF3D00009F29A /* MovieTransportBackground-long.png in Resources */,
+				76C43F0314CCF3D00009F29A /* MovieTransportBackground.png in Resources */,
+				76C43F0414CCF3D00009F29A /* UIAlertSheetDefaultBackground.png in Resources */,
+				76C43F0514CCF3D00009F29A /* UILCDBackground.png in Resources */,
+				76C43F0614CCF3D00009F29A /* UIPopupAlertSheetBackground.png in Resources */,
+				76C43F0714CCF3D00009F29A /* UITableSelection.png in Resources */,
+				76C43F0814CCF3D00009F29A /* lake.jpg in Resources */,
+				76C43F0914CCF3D00009F29A /* raindrops.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1004,11 +1077,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv6,
+				);
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Unfollower/Unfollower-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "Unfollower/Unfollower-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1021,10 +1099,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv6,
+				);
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Unfollower/Unfollower-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "Unfollower/Unfollower-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1054,11 +1137,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv6,
+				);
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Unfollower/Unfollower-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "Unfollower/Unfollower-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		760ED9C414EE02D100F727FE /* DownloadTheFacebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ED9C214EE02D000F727FE /* DownloadTheFacebook.m */; };
+		760ED9C514EE02D100F727FE /* DownloadTheFacebook.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760ED9C314EE02D100F727FE /* DownloadTheFacebook.xib */; };
 		768960691381B5E900670E8A /* matrix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 768960671381B5E900670E8A /* matrix.jpg */; };
 		7689606A1381B5E900670E8A /* matrix.png in Resources */ = {isa = PBXBuildFile; fileRef = 768960681381B5E900670E8A /* matrix.png */; };
 		7690983E137CB7CD00392018 /* ShowUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7690983C137CB7CC00392018 /* ShowUserView.m */; };
@@ -123,6 +125,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		760ED9C114EE02D000F727FE /* DownloadTheFacebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTheFacebook.h; sourceTree = "<group>"; };
+		760ED9C214EE02D000F727FE /* DownloadTheFacebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTheFacebook.m; sourceTree = "<group>"; };
+		760ED9C314EE02D100F727FE /* DownloadTheFacebook.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadTheFacebook.xib; sourceTree = "<group>"; };
 		768960671381B5E900670E8A /* matrix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = matrix.jpg; sourceTree = "<group>"; };
 		768960681381B5E900670E8A /* matrix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = matrix.png; sourceTree = "<group>"; };
 		7690983B137CB7CC00392018 /* ShowUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowUserView.h; sourceTree = "<group>"; };
@@ -409,6 +414,9 @@
 				7690983B137CB7CC00392018 /* ShowUserView.h */,
 				7690983C137CB7CC00392018 /* ShowUserView.m */,
 				7690983D137CB7CC00392018 /* ShowUserView.xib */,
+				760ED9C114EE02D000F727FE /* DownloadTheFacebook.h */,
+				760ED9C214EE02D000F727FE /* DownloadTheFacebook.m */,
+				760ED9C314EE02D100F727FE /* DownloadTheFacebook.xib */,
 			);
 			name = iPhone;
 			sourceTree = "<group>";
@@ -857,7 +865,7 @@
 		7691E89213782D1900578213 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = Al;
 			};
 			buildConfigurationList = 7691E89513782D1900578213 /* Build configuration list for PBXProject "Unfollower" */;
@@ -919,6 +927,7 @@
 				76C43F0714CCF3D00009F29A /* UITableSelection.png in Resources */,
 				76C43F0814CCF3D00009F29A /* lake.jpg in Resources */,
 				76C43F0914CCF3D00009F29A /* raindrops.jpg in Resources */,
+				760ED9C514EE02D100F727FE /* DownloadTheFacebook.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -997,6 +1006,7 @@
 				7691E9DE13787B2C00578213 /* SHKViewControllerWrapper.m in Sources */,
 				7691EA1D13788F8900578213 /* AboutView.m in Sources */,
 				7690983E137CB7CD00392018 /* ShowUserView.m in Sources */,
+				760ED9C414EE02D100F727FE /* DownloadTheFacebook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1086,9 +1096,10 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Unfollower/Unfollower-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Unfollower/Unfollower-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -1107,9 +1118,10 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Unfollower/Unfollower-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Unfollower/Unfollower-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = YES;
@@ -1146,9 +1158,10 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Unfollower/Unfollower-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Unfollower/Unfollower-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

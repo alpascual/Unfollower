@@ -16,6 +16,7 @@
 @synthesize unfollow;
 @synthesize forceChanges;
 @synthesize activityIndicator;
+@synthesize theFacebook = _theFacebook;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -95,6 +96,15 @@
 
 -(IBAction) saveAndContinue
 {
+    // validate first
+    NSRange stringRange = [self.username.text rangeOfString:@"@"];
+    if ( stringRange.length > 0 ) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Bad Username" message:@"Please remove the character @ from the username" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        
+        [alert show];
+        return;
+    }   
+    
     self.activityIndicator.hidden = NO;
     [self.activityIndicator startAnimating];
     
@@ -127,6 +137,8 @@
         
         else 
             [myPrefs setObject:[[NSString alloc] initWithFormat:@"%@", @"none" ] forKey:@"tweet"];
+        
+        [myPrefs synchronize];
         
         
         /*if ( [myPrefs stringForKey:@"username"] == nil )
@@ -178,26 +190,51 @@
         [self.activityIndicator stopAnimating];
         self.activityIndicator.hidden = YES;
         
-        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+        if ([myPrefs objectForKey:@"facebook"] == nil) 
         {
-            self.unfollow = [[UnfollowerListView alloc] initWithNibName:@"iPadUnfollowerListView" bundle:nil];
             
-            self.unfollow.modalPresentationStyle = UIModalPresentationFullScreen;
-            self.unfollow.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-            [self.unfollow presentModalViewController:self.unfollow animated:YES];
-            
-            [self.view.window addSubview: self.unfollow.view];
-            [self.view.window makeKeyAndVisible];
+            if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+            {
+                self.theFacebook = [[DownloadTheFacebook alloc] initWithNibName:@"DownloadTheFacebook" bundle:nil];
+                self.theFacebook.modalPresentationStyle = UIModalPresentationFormSheet;                
+                [self presentModalViewController:self.theFacebook animated:YES];
+                [self.view.window addSubview: self.theFacebook.view];
+                [self.view.window makeKeyAndVisible];
+            }
+            else
+            {
+                self.theFacebook = [[DownloadTheFacebook alloc] initWithNibName:@"DownloadTheFacebook" bundle:nil];
+                self.theFacebook.parentView = self.view;
+                
+                self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.theFacebook];
+                
+                [self.view.window addSubview: [navigationController view]];
+                [self.view.window makeKeyAndVisible];
+            }
         }
-        else
-        {
-            self.unfollow = [[UnfollowerListView alloc] initWithNibName:@"UnfollowerListView" bundle:nil];
-            self.unfollow.parentView = self.view;
-            
-            self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.unfollow];
-            
-            [self.view.window addSubview: [navigationController view]];
-            [self.view.window makeKeyAndVisible];
+        
+        else {
+            if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+            {
+                self.unfollow = [[UnfollowerListView alloc] initWithNibName:@"iPadUnfollowerListView" bundle:nil];
+                
+                self.unfollow.modalPresentationStyle = UIModalPresentationFullScreen;
+                self.unfollow.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+                [self.unfollow presentModalViewController:self.unfollow animated:YES];
+                
+                [self.view.window addSubview: self.unfollow.view];
+                [self.view.window makeKeyAndVisible];
+            }
+            else
+            {
+                self.unfollow = [[UnfollowerListView alloc] initWithNibName:@"UnfollowerListView" bundle:nil];
+                self.unfollow.parentView = self.view;
+                
+                self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.unfollow];
+                
+                [self.view.window addSubview: [navigationController view]];
+                [self.view.window makeKeyAndVisible];
+            }
         }
         //[self.navigationController pushViewController:self.unfollow animated:YES];
         //

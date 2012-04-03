@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UnfollowerListView.h"
 #import "SHK.h"
-
+#import "DownloadTheFacebook.h"
 
 @interface SettingsView : UIViewController {
     
@@ -23,6 +23,7 @@
     BOOL forceChanges;
     
     UIActivityIndicatorView *activityIndicator;
+    DownloadTheFacebook *_theFacebook;
 
 }
 
@@ -34,6 +35,7 @@
 @property (nonatomic,retain) UnfollowerListView *unfollow;
 @property (nonatomic) BOOL forceChanges;
 @property (nonatomic,retain) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (nonatomic,retain) DownloadTheFacebook *theFacebook;
 
 
 -(IBAction) segmentChanged;

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AboutView.h"
 #import "ShowUserView.h"
+#import "F3Swirly.h"
 
 
 @interface UnfollowerListView : UIViewController <UITableViewDataSource, UITableViewDelegate, UIWebViewDelegate, UITabBarDelegate> {
@@ -31,6 +32,9 @@
 @property (nonatomic,retain) IBOutlet UILabel *alertMessage;
 @property (nonatomic,retain) IBOutlet UITabBar *tabBar;
 @property (nonatomic,retain) UIView *parentView;
+@property (nonatomic,retain) IBOutlet F3Swirly *swirly;
+@property (nonatomic,retain) NSTimer *timerSwirly;
+
 
 - (void) rebuildDataWithRequest;
 - (void) showUser:(NSIndexPath *)indexPath;

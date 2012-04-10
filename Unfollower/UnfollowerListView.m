@@ -14,6 +14,8 @@
 @synthesize table, unfollowerList, web, aLoadingIndicator,alertMessage;
 @synthesize tabBar;
 @synthesize parentView;
+@synthesize swirly = _swirly;
+@synthesize timerSwirly = _timerSwirly;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -124,8 +126,64 @@
     self.web.hidden = NO;
     self.aLoadingIndicator.hidden = NO;
     
+    // Create a spinner
+    self.swirly.hidden = NO;
+    // A please wait will be great here
+    // Initialize the swirly
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        // Phone-specific sizes
+        self.swirly.font            = [UIFont fontWithName:@"Futura-Medium" size:30.0];
+        self.swirly.thickness       = 30.0f;
+        self.swirly.shadowOffset    = CGSizeMake(1,1);
+    } 
+    else {
+        // Tablet-specific sizes
+        self.swirly.font            = [UIFont fontWithName:@"Futura-Medium" size:44.0];
+        self.swirly.thickness       = 50.0f;
+        self.swirly.shadowOffset    = CGSizeMake(2,2);
+    }
+    self.swirly.backgroundColor = [UIColor clearColor];
+    self.swirly.textColor       = [UIColor whiteColor];
+    self.swirly.shadowColor     = [UIColor blackColor];
     
-       
+    [self.swirly addThreshold:10 
+                    withColor:[UIColor greenColor] 
+                          rpm:10
+                        label:@"Requesting"
+                     segments:2];
+    
+    [self.swirly addThreshold:15 
+                    withColor:[UIColor redColor] 
+                          rpm:15
+                        label:@"Processing"
+                     segments:3];
+    
+    [self.swirly addThreshold:20 
+                    withColor:[UIColor yellowColor] 
+                          rpm:20
+                        label:@"Matching"
+                     segments:4];
+    
+    [self.swirly addThreshold:25 
+                    withColor:[UIColor grayColor] 
+                          rpm:25
+                        label:@"Finishing"
+                     segments:4];
+    
+    self.swirly.value = 10;   
+    
+    self.timerSwirly = [NSTimer scheduledTimerWithTimeInterval:10.0 target:self
+                                                      selector:@selector(swirlyChange) userInfo:nil repeats:YES];
+}
+
+- (void)swirlyChange { 
+    self.swirly.value += 5;
+    
+    if ( self.swirly.value == 30 ) {
+//        [self.timerSwirly invalidate];
+//        self.swirly.hidden = YES;
+        self.swirly.value = 10;
+    }
 }
 
 
@@ -140,12 +198,22 @@
     [self.aLoadingIndicator stopAnimating];	
     
     self.web.hidden = YES;
-    self.alertMessage.text = @"Completed!";
+    self.alertMessage.text = @"Completed! Displaying ..";
     self.aLoadingIndicator.hidden = YES;
+    
+    // Stop spining
+    self.swirly.value = 25;
+    
+    // TODO Create a THREAD
+    NSThread *mythread = [[NSThread alloc] initWithTarget:self selector:@selector(doWorkFunc:) object:nil];
+    
+    [mythread start];
 	
+}
+
+-(void) doWorkFunc:(id) arg {
     // Do the request again and get the replies
     [self rebuildDataWithRequest];
-	
 }
 
 /// Check and process the alerts and also will send the tweet if needed to
@@ -211,6 +279,11 @@
         
         [get release];
         [myRequestString release];
+        
+        // Stop swirly
+        [self.timerSwirly invalidate];
+        self.swirly.hidden = YES;
+        [self.timerSwirly release];
         
         [self.table reloadData]; 
         NSLog(@"Finished loading the table");

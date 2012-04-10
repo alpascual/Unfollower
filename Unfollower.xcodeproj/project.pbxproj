@@ -107,6 +107,8 @@
 		7691EA1913788E7800578213 /* 23-bird.png in Resources */ = {isa = PBXBuildFile; fileRef = 7691EA1613788E7800578213 /* 23-bird.png */; };
 		7691EA1D13788F8900578213 /* AboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7691EA1B13788F8900578213 /* AboutView.m */; };
 		7691EA1E13788F8900578213 /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7691EA1C13788F8900578213 /* AboutView.xib */; };
+		76AF65411533CCA90049193E /* F3Swirly.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AF65401533CCA90049193E /* F3Swirly.m */; };
+		76AF65441533D3090049193E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76AF65431533D3090049193E /* QuartzCore.framework */; };
 		76C0C85E137ABBF20090C285 /* iPadUnfollowerListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C0C85C137ABBF20090C285 /* iPadUnfollowerListView.xib */; };
 		76C43EFC14CCF3D00009F29A /* autum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EED14CCF3D00009F29A /* autum.jpg */; };
 		76C43EFD14CCF3D00009F29A /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EEE14CCF3D00009F29A /* backbutton.png */; };
@@ -301,6 +303,9 @@
 		7691EA1A13788F8900578213 /* AboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutView.h; sourceTree = "<group>"; };
 		7691EA1B13788F8900578213 /* AboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutView.m; sourceTree = "<group>"; };
 		7691EA1C13788F8900578213 /* AboutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutView.xib; sourceTree = "<group>"; };
+		76AF653F1533CCA90049193E /* F3Swirly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3Swirly.h; sourceTree = "<group>"; };
+		76AF65401533CCA90049193E /* F3Swirly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3Swirly.m; sourceTree = "<group>"; };
+		76AF65431533D3090049193E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		76C0C85C137ABBF20090C285 /* iPadUnfollowerListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPadUnfollowerListView.xib; sourceTree = "<group>"; };
 		76C43EED14CCF3D00009F29A /* autum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = autum.jpg; sourceTree = "<group>"; };
 		76C43EEE14CCF3D00009F29A /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = "<group>"; };
@@ -323,6 +328,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76AF65441533D3090049193E /* QuartzCore.framework in Frameworks */,
 				7691E9E813787C0E00578213 /* SystemConfiguration.framework in Frameworks */,
 				7691E9E613787C0600578213 /* Security.framework in Frameworks */,
 				7691E9E413787BFF00578213 /* MessageUI.framework in Frameworks */,
@@ -341,6 +347,7 @@
 		7691E89013782D1900578213 = {
 			isa = PBXGroup;
 			children = (
+				76AF65431533D3090049193E /* QuartzCore.framework */,
 				7691E9E713787C0E00578213 /* SystemConfiguration.framework */,
 				7691E9E513787C0600578213 /* Security.framework */,
 				7691E9E313787BFF00578213 /* MessageUI.framework */,
@@ -375,6 +382,7 @@
 		7691E8A513782D1A00578213 /* Unfollower */ = {
 			isa = PBXGroup;
 			children = (
+				76AF653E1533CCA90049193E /* Activity */,
 				7691E8C413782D8B00578213 /* Resources */,
 				7691E8AE13782D1A00578213 /* UnfollowerAppDelegate.h */,
 				7691E8AF13782D1A00578213 /* UnfollowerAppDelegate.m */,
@@ -810,6 +818,15 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		76AF653E1533CCA90049193E /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				76AF653F1533CCA90049193E /* F3Swirly.h */,
+				76AF65401533CCA90049193E /* F3Swirly.m */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
 		76C43EEC14CCF3D00009F29A /* NewLook */ = {
 			isa = PBXGroup;
 			children = (
@@ -1007,6 +1024,7 @@
 				7691EA1D13788F8900578213 /* AboutView.m in Sources */,
 				7690983E137CB7CD00392018 /* ShowUserView.m in Sources */,
 				760ED9C414EE02D100F727FE /* DownloadTheFacebook.m in Sources */,
+				76AF65411533CCA90049193E /* F3Swirly.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -220,7 +220,7 @@
                 
                 self.unfollow.modalPresentationStyle = UIModalPresentationFullScreen;
                 self.unfollow.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-                [self.unfollow presentModalViewController:self.unfollow animated:YES];
+                //[self.unfollow presentModalViewController:self.unfollow animated:YES];
                 
                 [self.view.window addSubview: self.unfollow.view];
                 [self.view.window makeKeyAndVisible];

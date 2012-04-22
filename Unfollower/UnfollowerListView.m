@@ -132,19 +132,19 @@
     // Initialize the swirly
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         // Phone-specific sizes
-        self.swirly.font            = [UIFont fontWithName:@"Futura-Medium" size:30.0];
+        self.swirly.font            = [UIFont fontWithName:@"Futura-Medium" size:20.0];
         self.swirly.thickness       = 30.0f;
         self.swirly.shadowOffset    = CGSizeMake(1,1);
     } 
     else {
         // Tablet-specific sizes
-        self.swirly.font            = [UIFont fontWithName:@"Futura-Medium" size:44.0];
-        self.swirly.thickness       = 50.0f;
+        self.swirly.font            = [UIFont fontWithName:@"Futura-Medium" size:24.0];
+        self.swirly.thickness       = 30.0f;
         self.swirly.shadowOffset    = CGSizeMake(2,2);
     }
     self.swirly.backgroundColor = [UIColor clearColor];
-    self.swirly.textColor       = [UIColor whiteColor];
-    self.swirly.shadowColor     = [UIColor blackColor];
+    self.swirly.textColor       = [UIColor blackColor];
+    self.swirly.shadowColor     = [UIColor whiteColor];
     
     [self.swirly addThreshold:10 
                     withColor:[UIColor greenColor] 
@@ -236,7 +236,7 @@
 
 - (void) rebuildDataWithRequest
 {
-    self.alertMessage.text = @"Connecting...";
+    self.alertMessage.text = @"Finishing Please Wait...";
     
     [self chechallProcess];
     

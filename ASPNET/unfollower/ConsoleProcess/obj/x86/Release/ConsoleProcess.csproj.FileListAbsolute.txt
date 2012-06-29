@@ -1,0 +1,5 @@
+C:\temp\hg\unfollower\unfollower\ConsoleProcess\bin\Release\ConsoleProcess.exe
+C:\temp\hg\unfollower\unfollower\ConsoleProcess\bin\Release\ConsoleProcess.pdb
+C:\temp\hg\unfollower\unfollower\ConsoleProcess\obj\x86\Release\ResolveAssemblyReference.cache
+C:\temp\hg\unfollower\unfollower\ConsoleProcess\obj\x86\Release\ConsoleProcess.exe
+C:\temp\hg\unfollower\unfollower\ConsoleProcess\obj\x86\Release\ConsoleProcess.pdb

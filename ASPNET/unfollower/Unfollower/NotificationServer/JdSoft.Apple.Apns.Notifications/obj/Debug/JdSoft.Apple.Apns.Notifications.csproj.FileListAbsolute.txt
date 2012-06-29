@@ -1,0 +1,16 @@
+C:\temp\Redth-APNS-Sharp-c279210\Redth-APNS-Sharp-c279210\JdSoft.Apple.Apns.Notifications\bin\Debug\JdSoft.Apns.Notifications.dll
+C:\temp\Redth-APNS-Sharp-c279210\Redth-APNS-Sharp-c279210\JdSoft.Apple.Apns.Notifications\bin\Debug\JdSoft.Apns.Notifications.pdb
+C:\temp\Redth-APNS-Sharp-c279210\Redth-APNS-Sharp-c279210\JdSoft.Apple.Apns.Notifications\bin\Debug\Newtonsoft.Json.Compact.dll
+C:\temp\Redth-APNS-Sharp-c279210\Redth-APNS-Sharp-c279210\JdSoft.Apple.Apns.Notifications\obj\Debug\ResolveAssemblyReference.cache
+C:\temp\Redth-APNS-Sharp-c279210\Redth-APNS-Sharp-c279210\JdSoft.Apple.Apns.Notifications\obj\Debug\JdSoft.Apns.Notifications.dll
+C:\temp\Redth-APNS-Sharp-c279210\Redth-APNS-Sharp-c279210\JdSoft.Apple.Apns.Notifications\obj\Debug\JdSoft.Apns.Notifications.pdb
+C:\temp\hg\unfollower\unfollower\Unfollower\NotificationServer\JdSoft.Apple.Apns.Notifications\bin\Debug\JdSoft.Apns.Notifications.dll
+C:\temp\hg\unfollower\unfollower\Unfollower\NotificationServer\JdSoft.Apple.Apns.Notifications\bin\Debug\JdSoft.Apns.Notifications.pdb
+C:\temp\hg\unfollower\unfollower\Unfollower\NotificationServer\JdSoft.Apple.Apns.Notifications\obj\Debug\ResolveAssemblyReference.cache
+C:\temp\hg\unfollower\unfollower\Unfollower\NotificationServer\JdSoft.Apple.Apns.Notifications\obj\Debug\JdSoft.Apns.Notifications.dll
+C:\temp\hg\unfollower\unfollower\Unfollower\NotificationServer\JdSoft.Apple.Apns.Notifications\obj\Debug\JdSoft.Apns.Notifications.pdb
+C:\Projects\Unfollower\unfollower\Unfollower\NotificationServer\JdSoft.Apple.Apns.Notifications\bin\Debug\JdSoft.Apns.Notifications.dll
+C:\Projects\Unfollower\unfollower\Unfollower\NotificationServer\JdSoft.Apple.Apns.Notifications\bin\Debug\JdSoft.Apns.Notifications.pdb
+C:\Projects\Unfollower\unfollower\Unfollower\NotificationServer\JdSoft.Apple.Apns.Notifications\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Unfollower\unfollower\Unfollower\NotificationServer\JdSoft.Apple.Apns.Notifications\obj\Debug\JdSoft.Apns.Notifications.dll
+C:\Projects\Unfollower\unfollower\Unfollower\NotificationServer\JdSoft.Apple.Apns.Notifications\obj\Debug\JdSoft.Apns.Notifications.pdb

@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Unfollower.Models.FriendRing>
+@{
+    Layout = null;
+}
+
+@foreach (var item in Model)
+{
+    <div class="service-list-row">       
+        <h3>
+            @item.TwitterUsername
+        </h3>
+        <div class="service-list-row-content">
+            Join by: <strong>@item.Joined</strong><br />
+            Last Visit by: <strong>@item.LastVisit</strong><br />            
+        </div>
+        <br />
+    </div>
+}

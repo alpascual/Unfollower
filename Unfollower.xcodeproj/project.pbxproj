@@ -124,6 +124,7 @@
 		76C43F0714CCF3D00009F29A /* UITableSelection.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EF914CCF3D00009F29A /* UITableSelection.png */; };
 		76C43F0814CCF3D00009F29A /* lake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EFA14CCF3D00009F29A /* lake.jpg */; };
 		76C43F0914CCF3D00009F29A /* raindrops.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C43EFB14CCF3D00009F29A /* raindrops.jpg */; };
+		884B151315E7FD910030A2ED /* ServerRestUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 884B151215E7FD910030A2ED /* ServerRestUrl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -321,6 +322,8 @@
 		76C43EF914CCF3D00009F29A /* UITableSelection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UITableSelection.png; sourceTree = "<group>"; };
 		76C43EFA14CCF3D00009F29A /* lake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lake.jpg; sourceTree = "<group>"; };
 		76C43EFB14CCF3D00009F29A /* raindrops.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = raindrops.jpg; sourceTree = "<group>"; };
+		884B151115E7FD910030A2ED /* ServerRestUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerRestUrl.h; sourceTree = "<group>"; };
+		884B151215E7FD910030A2ED /* ServerRestUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerRestUrl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -382,6 +385,7 @@
 		7691E8A513782D1A00578213 /* Unfollower */ = {
 			isa = PBXGroup;
 			children = (
+				884B150F15E7FD770030A2ED /* Constants */,
 				76AF653E1533CCA90049193E /* Activity */,
 				7691E8C413782D8B00578213 /* Resources */,
 				7691E8AE13782D1A00578213 /* UnfollowerAppDelegate.h */,
@@ -856,6 +860,15 @@
 			path = Dialogs;
 			sourceTree = "<group>";
 		};
+		884B150F15E7FD770030A2ED /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				884B151115E7FD910030A2ED /* ServerRestUrl.h */,
+				884B151215E7FD910030A2ED /* ServerRestUrl.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1025,6 +1038,7 @@
 				7690983E137CB7CD00392018 /* ShowUserView.m in Sources */,
 				760ED9C414EE02D100F727FE /* DownloadTheFacebook.m in Sources */,
 				76AF65411533CCA90049193E /* F3Swirly.m in Sources */,
+				884B151315E7FD910030A2ED /* ServerRestUrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

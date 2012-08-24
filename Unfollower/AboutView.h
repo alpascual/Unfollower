@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ServerRestUrl.h"
 
 @interface AboutView : UIViewController <UIWebViewDelegate> {
     

@@ -85,7 +85,7 @@
     {
         NSString *myUsername = [myPrefs stringForKey:@"username"];
     
-        NSString *myRequestString = [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/tweeps/delete?sUsername=%@", myUsername];
+        NSString *myRequestString = [[NSString alloc] initWithFormat:@"%@%@", [ServerRestUrl getServerUrlWith:@"delete?sUsername="] ,myUsername];
     
         NSURL *urlToOpen = [[NSURL alloc] initWithString:myRequestString];
     

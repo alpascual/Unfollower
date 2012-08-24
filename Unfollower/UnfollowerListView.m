@@ -53,7 +53,7 @@
     {
         NSString *myUsername = [myPrefs stringForKey:@"username"];
         NSString *tweetPref = [myPrefs stringForKey:@"tweet"];
-        NSString *myRequestString = [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/tweeps/details?sUserName=%@", myUsername];
+        NSString *myRequestString = [[NSString alloc] initWithFormat:@"%@%@", [ServerRestUrl getServerUrlWith:@"details?sUserName="], myUsername];
         
         NSURL *urlToOpen = [[NSURL alloc] initWithString:myRequestString];
         [self.aLoadingIndicator startAnimating];
@@ -67,15 +67,15 @@
         
         if ( [tweetPref isEqualToString:@"reply"] )
         {
-            preference = [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/tweeps/Edit?sUserName=%@&bAlert=true&bDM=false", myUsername];
+            preference = [[NSString alloc] initWithFormat:@"%@%@&bAlert=true&bDM=false", [ServerRestUrl getServerUrlWith:@"Edit?sUserName="] ,myUsername];
         }
         else if ( [tweetPref isEqualToString:@"dm"] )
         {
-            preference = [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/tweeps/Edit?sUserName=%@&bAlert=false&bDM=true", myUsername];
+            preference = [[NSString alloc] initWithFormat:@"%@%@&bAlert=false&bDM=true", [ServerRestUrl getServerUrlWith:@"Edit?sUserName="] ,myUsername];
         }
         else
         {
-            preference = [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/tweeps/Edit?sUserName=%@&bAlert=false&bDM=false", myUsername];
+            preference = [[NSString alloc] initWithFormat:@"%@%@&bAlert=false&bDM=false", [ServerRestUrl getServerUrlWith:@"Edit?sUserName="] ,myUsername];
         }
         
         // Add the preference       
@@ -89,7 +89,7 @@
         if ( [myPrefs stringForKey:@"token"] != nil )
         {
             NSString *token = [myPrefs stringForKey:@"token"];
-             NSString *myRequestString = [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/tweeps/AddToken?sUserName=%@&sToken=%@", myUsername, token];
+             NSString *myRequestString = [[NSString alloc] initWithFormat:@"%@%@&sToken=%@", [ServerRestUrl getServerUrlWith:@"AddToken?sUserName="] ,myUsername, token];
             
             // Your code goes here: get the token and do something
             NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:myRequestString]];
@@ -224,7 +224,7 @@
     if ( [myPrefs stringForKey:@"username"] != nil )
     {
         NSString *myUsername = [myPrefs stringForKey:@"username"];
-        NSString *myRequestString = [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/tweeps/ProcessOne?sUsername=%@", myUsername];
+        NSString *myRequestString = [[NSString alloc] initWithFormat:@"%@%@", [ServerRestUrl getServerUrlWith:@"ProcessOne?sUsername="] ,myUsername];
         
         NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:myRequestString]];
         NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
@@ -245,7 +245,7 @@
     if ( [myPrefs stringForKey:@"username"] != nil )
     {
         NSString *myUsername = [myPrefs stringForKey:@"username"];
-        NSString *myRequestString = [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/tweeps/details?sUserName=%@", myUsername];
+        NSString *myRequestString = [[NSString alloc] initWithFormat:@"%@%@",[ServerRestUrl getServerUrlWith:@"details?sUserName="]  ,myUsername];
         
         NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:myRequestString]];
         NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];

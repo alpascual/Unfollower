@@ -10,11 +10,11 @@
 
 @implementation ServerRestUrl
 
-//http://168.62.18.51:8080
+//http://157.56.164.99:8080/
 //http://tweet.alsandbox.us
 
 + (NSString *) getServerUrlWith:(NSString *) suffix
 {
-    return [[NSString alloc] initWithFormat:@"http://168.62.18.51:8080/tweeps/%@", suffix];
+    return [[NSString alloc] initWithFormat:@"http://157.56.164.99:8080/tweeps/%@", suffix];
 }
 @end

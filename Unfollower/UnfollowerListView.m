@@ -90,6 +90,7 @@
         {
             NSString *token = [myPrefs stringForKey:@"token"];
              NSString *myRequestString = [[NSString alloc] initWithFormat:@"%@%@&sToken=%@", [ServerRestUrl getServerUrlWith:@"AddToken?sUserName="] ,myUsername, token];
+            NSLog(@"request url %@", myRequestString);
             
             // Your code goes here: get the token and do something
             NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:myRequestString]];
@@ -225,6 +226,8 @@
     {
         NSString *myUsername = [myPrefs stringForKey:@"username"];
         NSString *myRequestString = [[NSString alloc] initWithFormat:@"%@%@", [ServerRestUrl getServerUrlWith:@"ProcessOne?sUsername="] ,myUsername];
+        
+        NSLog(@"Check all %@", myRequestString);
         
         NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:myRequestString]];
         NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];

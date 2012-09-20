@@ -12,9 +12,10 @@
 
 //http://157.56.164.99:8080/
 //http://tweet.alsandbox.us
+//http://tweet.ashleypascual.com.hostasp.info/
 
 + (NSString *) getServerUrlWith:(NSString *) suffix
 {
-    return [[NSString alloc] initWithFormat:@"http://157.56.164.99:8080/tweeps/%@", suffix];
+    return [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/tweeps/%@", suffix];
 }
 @end

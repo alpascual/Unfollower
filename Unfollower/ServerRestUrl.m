@@ -16,6 +16,6 @@
 
 + (NSString *) getServerUrlWith:(NSString *) suffix
 {
-    return [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/tweeps/%@", suffix];
+    return [[NSString alloc] initWithFormat:@"http://157.56.164.99:8080/tweeps/%@", suffix];
 }
 @end

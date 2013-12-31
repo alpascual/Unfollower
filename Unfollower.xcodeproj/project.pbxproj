@@ -897,7 +897,7 @@
 		7691E89213782D1900578213 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Al;
 			};
 			buildConfigurationList = 7691E89513782D1900578213 /* Build configuration list for PBXProject "Unfollower" */;
